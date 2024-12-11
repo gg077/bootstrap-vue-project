@@ -1,23 +1,19 @@
 <template>
   <div class="container mt-5">
-    <h2>Mijn Lijst</h2>
-    <input v-model="listitem" type="text" class="form-control mb-2" placeholder="Voeg een item toe..."/>
-    <button @click="voegtoe" class="btn btn-success mb-3">Toevoegen</button>
-    <ul class="list-group">
-      <li v-for="(item, index) in items" :key="index" class="list-group-item">{{item}}</li>
-    </ul>
+    <h1>Custom Directive: v-focus</h1>
+    <p>De input hieronder krijgt automatisch focus wanneer de pagina
+      laadt:</p>
+    <button v-copy="'Dit is de te kopiëren tekst'">Kopieer tekst</button>
   </div>
 </template>
 <script>
-import { ref } from 'vue';
 export default {
-  setup() {
-    const listitem = ref('');
-    const items = ref([]);
-    const voegtoe = () =>{
-      items.value.push(listitem.value.trim());
-    }
-    return {listitem, items, voegtoe}
-  },
+  name: 'App',
 };
 </script>
+<style>
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+}
+</style>

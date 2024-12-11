@@ -8,6 +8,9 @@
     <TempConverter/>
     <RealtimeZoekfunctie/>
     <GptOefeningen/>
+    <FetchData/>
+    <TimerCleanup/>
+    <BeforeUpdate/>
 
   </div>
 </template>
@@ -20,6 +23,11 @@ import LoginStatus from "@/components/LoginStatus.vue";
 import TempConverter from "@/components/TempConverter.vue"
 import RealtimeZoekfunctie from "@/components/RealtimeZoekfunctie.vue";
 import GptOefeningen from "@/components/GptOefeningen.vue";
+import FetchData from "@/components/FetchData.vue";
+import TimerCleanup from "@/components/TimerCleanup.vue";
+import BeforeUpdate from "@/components/BeforeUpdate.vue";
+
+
 
 export default defineComponent({
   name:'App', //naam van het rootcomponent
@@ -31,6 +39,9 @@ export default defineComponent({
     DynamicCheckList,
     LoginStatus,
     TempConverter,
+    FetchData,
+    TimerCleanup,
+    BeforeUpdate,
   }
 })
 
